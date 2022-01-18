@@ -1,9 +1,6 @@
 package minimum;
 
-import java.io.Serializable;
-
-@SuppressWarnings("serial")
-public class Person implements Serializable {
+public class Person{
 	@CustomAnnotation(value = 1, description = "some description 1")
 	private String name;
 	@CustomAnnotation(value = 2, description = "some description 2")

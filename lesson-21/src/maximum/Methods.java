@@ -12,19 +12,16 @@ public class Methods {
 
 	public void toLocalDate(Date date) {
 		LocalDate ld = LocalDateTime.ofInstant(date.toInstant(), ZoneId.systemDefault()).toLocalDate();
-		System.out.print("LocalDate: ");
-		System.out.println(ld);
+		System.out.println("LocalDate: " + ld);
 	}
 
 	public void toLocalTime(Date date) {
 		LocalTime lt = LocalDateTime.ofInstant(date.toInstant(), ZoneId.systemDefault()).toLocalTime();
-		System.out.print("LocalTime: ");
-		System.out.println(lt);
+		System.out.println("LocalTime: " + lt);
 	}
 
 	public void toLocalDateTime(Date date) {
 		LocalDateTime ldt = LocalDateTime.ofInstant(date.toInstant(), ZoneId.systemDefault());
-		System.out.print("LocalDateTime: ");
-		System.out.println(ldt);
+		System.out.println("LocalDateTime: " + ldt);
 	}
 }
